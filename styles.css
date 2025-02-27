@@ -1,0 +1,121 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Fond fixe */
+body {
+    background-image: url('img/background.png'); /* Image de fond */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+/* Contenu principal */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#subtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style des boutons de jeu */
+.button-game {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.button-game:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.button-img {
+    width: 100%;
+    height: auto;
+}
+
+.button-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.button-description {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    color: #fff;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-out;
+}
