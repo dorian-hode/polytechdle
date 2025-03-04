@@ -3,46 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devinez le Professeur</title>
+    <title>Polytechdle</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- En-tête avec le logo -->
     <header>
-        <div class="logo-container">
-            <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="header-content">
+            <!-- Engrenage à gauche -->
+            <div class="logo-container left">
+                <img src="img/gear.svg" alt="Logo Engrenage" class="logo-gear">
+            </div>
+            
+            <!-- Logo Polytech Angers au centre -->
+            <div class="logo-container center">
+                <img src="img/polytech-angers-logo.png" alt="Polytech Angers" class="logo-polytech">
+            </div>
+            
+            <!-- Drapeau à droite -->
+            <div class="language-selector right">
+                <img src="img/france.png" alt="Drapeau France" class="flag">
+            </div>
         </div>
-        <div class="language-selector">
-            <span title="fr" class="fi flag flag-header fi-fr"></span>
-        </div>
-    </header>
+    </header>    
 
     <!-- Menu avec les boutons -->
     <main>
+        <div id="subtitle">
+            <span>Devine le Professeur de Polytech Angers</span>
+        </div>
         <div class="menu-container">
-            <div id="subtitle"><span>Devinez le Professeur</span></div>
             <div class="buttons-container">
-                <div class="button-game">
-                    <img src="img/classic-button.png" class="button-img" width="100%">
-                    <div class="button-title">Classique</div>
-                    <div class="button-description">Des indices à chaque essai</div>
-                </div>
-                <div class="button-game">
-                    <img src="img/phd-button.png" class="button-img" width="100%">
-                    <div class="button-title">PhD</div>
-                    <div class="button-description">Devinez avec un indice difficile</div>
-                </div>
-                <div class="button-game">
-                    <img src="img/photo-button.png" class="button-img" width="100%">
-                    <div class="button-title">Photo</div>
-                    <div class="button-description">Devinez avec une photo</div>
-                </div>
+                <a href="classic.html" class="button-link">
+                    <div class="button-game">
+                        <img src="img/classic-button.png" class="button-img" width="100%">
+                        <div class="button-title">Classique</div>
+                        <div class="button-description">Des indices à chaque essai</div>
+                    </div>
+                </a>
+                <a href="phd.html" class="button-link">
+                    <div class="button-game">
+                        <img src="img/phd-button.png" class="button-img" width="100%">
+                        <div class="button-title">PhD</div>
+                        <div class="button-description">Devinez avec un indice difficile</div>
+                    </div>
+                </a>
+                <a href="photo.html" class="button-link">
+                    <div class="button-game">
+                        <img src="img/photo-button.png" class="button-img" width="100%">
+                        <div class="button-title">Photo</div>
+                        <div class="button-description">Devinez avec une photo</div>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 Votre Nom. Tous droits réservés.</p>
+        <p>&copy; 2023 SIMON Hugo & NAVET Titouan & HODE Dorian. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
