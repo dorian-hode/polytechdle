@@ -248,21 +248,32 @@ footer {
     margin: 10px;
 }
 
-.button-choice, td {
+.button-choice,
+td {
     margin-left: auto;
     margin-right: auto;
-    padding : 10px;
-    margin : 10px;
+    padding: 10px;
+    margin: 10px;
     padding-left: 10px;
-    
+
 }
-.button-text{
+
+#button-choice {
+    padding: 10px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.button-text {
     font-size: 15px;
     padding-bottom: 4px;
-    font-family : "Montserrat";
+    font-family: "Montserrat";
 }
 
-
+label{
+    
+    margin-top: 20px;
+}
 
 /* switch button code from https://www.w3schools.com/howto/howto_css_switch.asp */
 /* The switch - the box around the slider */
@@ -326,4 +337,43 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.saisie-text {
+    width: 440px;
+    height: 75px;
+    background-color: #0BBBEF;
+    border: 4px solid #0069B4;
+    padding: 10px;
+    margin: 10px;
+}
+
+.text-input {
+
+    padding-left: 25px;
+}
+
+
+
+
+input[type=text] {
+    border-radius: 20px;
+    border: 1px solid #2d9fd9;
+    width: 175px;
+    height: 25px;
+    padding-left: 7px;
+}
+
+
+input[type=submit] {
+    width: 100px;
+    height: 25px;
+    margin-left: 25px;
+    background-color: #2196F3;
+    border-color: #2196F3;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #2d9fd9;
+
+    box-sizing: border-box;
 }
