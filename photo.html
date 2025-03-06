@@ -21,18 +21,21 @@
     </header>
 
     <main>
+
         <div id="subtitle">
             <span>Devine le Professeur de Polytech Angers</span>
         </div>
+        <!-- Boite contenant le jeu -->
         <div class="game-container">
+            <!-- Annonce du jeu + image du prof -->
             <div class="box">
                 <h3>Quel professeur de Polytech figure sur la photo suivante ?</h3>
                 <br></br>
                 <img src="https://perso-laris.univ-angers.fr/~lhommeau/photo2.jpg" alt="Photo prof" width="200"
                     height="200">
-
+                <!-- Boutons de personnalisation du jeu -->
                 <div>
-                    <table class="button-choice">
+                    <table id="button-choice">
                         <td>
                             <p class="button-text">Chaque essai réduit le flou</p>
                             <label class="switch">
@@ -52,6 +55,27 @@
             </div>
         </div>
 
+        <!-- Saisie du nom du prof -->
+        <div>
+            <div class="saisie-text">
+                <form action="">
+                    <table >
+                        <td class = "text-input">
+                            <input id= "input" type="text", placeholder ="Nom du professeur" name="fname"><br>
+                        </td>
+                        <td class = "text-input">
+                            <input type="submit" value="Submit">
+                        </td>
+
+                    </table>
+                </form>
+            </div>
+            <!-- Affichage du dernier prof a deviner -->
+            <div>
+                <h3>Le professeur d'hier était : {nom prof}</h3>
+            </div>
+
+        </div>
     </main>
 
     <footer>
