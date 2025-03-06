@@ -44,6 +44,35 @@ header {
     /* Limiter la largeur de l'en-tête */
     margin: 0 auto;
 }
+ /* Pour la partie classic_page*/
+.header-classic {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-classic li {
+    margin: 0;
+}
+
+.header-classic a {
+    text-decoration: none;
+}
+
+.header-classic img {
+    width: 225px; /* Adjust size as needed */
+    height: 85px;
+    vertical-align: middle;
+    filter: grayscale(100%) opacity(0.6);
+    transition: filter 0.3s ease;
+}
+
+.header-classic a.selected img {
+    filter: none;
+    opacity: 1;
+}
 
 /* Logo Engrenage (à gauche) */
 .logo-container.left {
@@ -191,6 +220,11 @@ header {
     animation: fadeIn 1s ease-out;
 }
 
+.game-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
 
 footer {
     width: 100%;
