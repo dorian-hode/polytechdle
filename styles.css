@@ -248,6 +248,17 @@ footer {
     margin: 10px;
 }
 
+.box-classic {
+    width: 440px;
+    height: 200px;
+    background-color: #0BBBEF;
+    border: 4px solid #0069B4;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
 .button-choice, td {
     margin-left: auto;
     margin-right: auto;
@@ -260,6 +271,13 @@ footer {
     font-size: 15px;
     padding-bottom: 4px;
     font-family : "Montserrat";
+}
+
+.button-box-classic {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 
