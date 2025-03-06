@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
+    <title>Polytechdle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- En-tête avec le logo -->
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="photo.html">Photo</a></li>
-                <li><a href="phd.html">PhD</a></li>
-                <li><a href="classic.html">Classic</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="header-content">
+            <!-- Engrenage à gauche -->
+            <div class="logo-container left">
+                <img src="img/gear.svg" alt="Logo Engrenage" class="logo-gear">
+            </div>
+            
+            <!-- Logo Polytech Angers au centre -->
+            <div class="logo-container center">
+                <img src="img/polytech-angers-logo.png" alt="Polytech Angers" class="logo-polytech">
+            </div>
+            
+            <!-- Drapeau à droite -->
+            <div class="language-selector right">
+                <img src="img/france.png" alt="Drapeau France" class="flag">
+            </div>
+        </div>
+    </header>    
 
+    <!-- Menu avec les boutons -->
     <main>
-        <h2>About This Website</h2>
-        <p>This is a basic HTML5 web page structure with links to other pages.</p>
+        <div id="subtitle">
+            <span>Devine le Professeur de Polytech Angers</span>
+        </div>
+        <div class="menu-container">
+            <div class="buttons-container">
+                <a href="classic.html" class="button-link">
+                    <div class="button-game">
+                        <img src="img/classic-button.png" class="button-img" width="100%">
+                        <div class="button-title">Classique</div>
+                        <div class="button-description">Des indices à chaque essai</div>
+                    </div>
+                </a>
+                <a href="phd.html" class="button-link">
+                    <div class="button-game">
+                        <img src="img/phd-button.png" class="button-img" width="100%">
+                        <div class="button-title">PhD</div>
+                        <div class="button-description">Devinez avec un indice difficile</div>
+                    </div>
+                </a>
+                <a href="photo.html" class="button-link">
+                    <div class="button-game">
+                        <img src="img/photo-button.png" class="button-img" width="100%">
+                        <div class="button-title">Photo</div>
+                        <div class="button-description">Devinez avec une photo</div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 SIMON Hugo & NAVET Titouan & HODE Dorian. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
-    
