@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo - Your Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
 </head>
+
 <body>
     <header>
         <h1>Photo Page</h1>
@@ -19,12 +21,42 @@
     </header>
 
     <main>
-        <h2>Photo Gallery</h2>
-        <p>Welcome to the photo gallery! Here you can find various images.</p>
+        <div id="subtitle">
+            <span>Devine le Professeur de Polytech Angers</span>
+        </div>
+        <div class="game-container">
+            <div class="box">
+                <h3>Quel professeur de Polytech figure sur la photo suivante ?</h3>
+                <br></br>
+                <img src="https://perso-laris.univ-angers.fr/~lhommeau/photo2.jpg" alt="Photo prof" width="200"
+                    height="200">
+
+                <div>
+                    <table class="button-choice">
+                        <td>
+                            <p class="button-text">Chaque essai réduit le flou</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <p class="button-text">Afficher les couleurs</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </table>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 2023 SIMON Hugo & NAVET Titouan & HODE Dorian. Tous droits réservés.</p>
     </footer>
 </body>
+
 </html>

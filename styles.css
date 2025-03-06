@@ -8,15 +8,17 @@
 
 /* Fond fixe */
 body {
-    font-family: 'Poppins', sans-serif; 
-    background-image: url('img/background.png'); /* Image de fond */
+    font-family: 'Poppins', sans-serif;
+    background-image: url('img/background.png');
+    /* Image de fond */
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;;
+    justify-content: space-between;
+    ;
     align-items: center;
     text-align: center;
     color: #000;
@@ -27,16 +29,19 @@ header {
     width: 100%;
     padding: 20px 0;
     position: relative;
-    background-color: transparent; /* Fond transparent pour l'en-tête */
+    background-color: transparent;
+    /* Fond transparent pour l'en-tête */
 }
 
 /* Conteneur de l'en-tête */
 .header-content {
     display: flex;
-    justify-content: center; /* Centrer tous les éléments */
+    justify-content: center;
+    /* Centrer tous les éléments */
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Limiter la largeur de l'en-tête */
+    max-width: 1200px;
+    /* Limiter la largeur de l'en-tête */
     margin: 0 auto;
 }
  /* Pour la partie classic_page*/
@@ -77,7 +82,8 @@ header {
 }
 
 .logo-gear {
-    width: 50px; /* Taille de l'engrenage */
+    width: 50px;
+    /* Taille de l'engrenage */
     height: auto;
 }
 
@@ -89,15 +95,20 @@ header {
 }
 
 .logo-polytech {
-    max-width: 400px; /* Taille du logo Polytech Angers */
+    max-width: 400px;
+    /* Taille du logo Polytech Angers */
     height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'animation */
-    border-radius: 10px; /* Ajout de bords arrondis pour un effet plus doux */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transition pour l'animation */
+    border-radius: 10px;
+    /* Ajout de bords arrondis pour un effet plus doux */
 }
 
 .logo-polytech:hover {
-    transform: scale(1.05); /* Agrandir légèrement l'image au survol */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombrage au survol */
+    transform: scale(1.05);
+    /* Agrandir légèrement l'image au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* Ombrage au survol */
 }
 
 /* Drapeau (à droite) */
@@ -108,7 +119,8 @@ header {
 }
 
 .flag {
-    width: 50px; /* Taille du drapeau */
+    width: 50px;
+    /* Taille du drapeau */
     height: auto;
 }
 
@@ -121,23 +133,24 @@ header {
 }
 
 #subtitle {
-    margin-bottom:1rem;
-    font-size:1.1rem;
-    font-weight:1000;
-    color:#0a1417;
-    text-transform:uppercase;
-    font-style:normal
-   }
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 1000;
+    color: #0a1417;
+    text-transform: uppercase;
+    font-style: normal
+}
+
 #subtitle span {
-    background:#cfa363;
-    padding:5px 10px;
-    box-shadow:0 4px 4px 0 rgba(0,0,0,.15);
-    border-style:solid;
-    border-color:#534e41;
-    border-radius:8px;
-    background-image:url(data:image/png;base64,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);
-    background-size:100% 100%;
-    font-size:15px
+    background: #cfa363;
+    padding: 5px 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .15);
+    border-style: solid;
+    border-color: #534e41;
+    border-radius: 8px;
+    background-image: url(data:image/png;base64,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);
+    background-size: 100% 100%;
+    font-size: 15px
 }
 
 .buttons-container {
@@ -148,8 +161,8 @@ header {
 }
 
 .button-link {
-    text-decoration: none; 
-    display: block; 
+    text-decoration: none;
+    display: block;
 }
 
 .button-game {
@@ -172,7 +185,7 @@ header {
 }
 
 .button-title {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
@@ -182,7 +195,7 @@ header {
 }
 
 .button-description {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     position: absolute;
     left: 225px;
@@ -196,6 +209,7 @@ header {
         opacity: 0;
         transform: translateY(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -216,7 +230,100 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre pour le footer */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fond sombre pour le footer */
     position: relative;
     color: #fff;
+}
+
+
+/* Box css */
+
+.box {
+    width: 440px;
+    height: 450px;
+    background-color: #0BBBEF;
+    border: 4px solid #0069B4;
+    padding: 10px;
+    margin: 10px;
+}
+
+.button-choice, td {
+    margin-left: auto;
+    margin-right: auto;
+    padding : 10px;
+    margin : 10px;
+    padding-left: 10px;
+    
+}
+.button-text{
+    font-size: 15px;
+    padding-bottom: 4px;
+    font-family : "Montserrat";
+}
+
+
+
+/* switch button code from https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
