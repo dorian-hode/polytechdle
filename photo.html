@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo - Your Website</title>
+    <title>Photo - Polytechdle</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
 </head>
 
@@ -60,25 +60,22 @@
         </div>
 
         <!-- Saisie du nom du prof -->
+        <div class="box">
+            <form action="">
+                <table>
+                    <td class="text-input">
+                        <input id="input" type="text" , placeholder="Nom du professeur" name="fname"><br>
+                    </td>
+                    <td class="text-input">
+                        <input type="submit" value="Deviner" width="75" height="25px">
+                    </td>
+
+                </table>
+            </form>
+        </div>
+        <!-- Affichage du dernier prof a deviner -->
         <div>
-            <div class="saisie-text">
-                <form action="">
-                    <table>
-                        <td class="text-input">
-                            <input id="input" type="text" , placeholder="Nom du professeur" name="fname"><br>
-                        </td>
-                        <td class="text-input">
-                            <input type="submit" value="Deviner" width="75" height="25px">
-                        </td>
-
-                    </table>
-                </form>
-            </div>
-            <!-- Affichage du dernier prof a deviner -->
-            <div>
-                <h3>Le professeur d'hier était : {nom prof}</h3>
-            </div>
-
+            <h3>Le professeur d'hier était : {nom prof}</h3>
         </div>
 
         <div class ="box">
