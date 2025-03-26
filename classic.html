@@ -10,15 +10,12 @@
     <header>
         
         <div class="header-content">
-            <!-- Engrenage à gauche -->
             <div class="logo-container left">
                 <img src="img/gear.svg" alt="Logo Engrenage" class="logo-gear">
             </div>
-            <!-- Classic Page au centre -->
             <div class="logo-container center">
-                <h1>Classic Page</h1>
+                <a href="index.html"><img src="img/polytech-angers-logo-modif.png" alt="Polytech Angers" class="logo-polytech"></a>
             </div>
-            <!-- Drapeau à droite -->
             <div class="language-selector right">
                 <img src="img/france.png" alt="Drapeau France" class="flag">
             </div>
@@ -26,7 +23,6 @@
 
         <nav>
             <ul class="header-classic">
-                <li><a href="index.html"><img src="img/polytech-angers-logo.png" alt="Home"></a></li>
                 <li><a href="classic.html" class="selected"><img src="img/classic-button.png" alt="Classic"></a></li>
                 <li><a href="photo.html"><img src="img/photo-button.png" alt="Photo"></a></li>
                 <li><a href="phd.html"><img src="img/phd-button.png" alt="PhD"></a></li>
@@ -35,13 +31,65 @@
     </header>
     
     <main>
-        <h2>Classic Content</h2>
-        <p>This page features classic content and resources.</p>
-        <p>Allez le foot</p>
+        <div id="subtitle">
+            <span>Devine le Professeur de Polytech Angers</span>
+        </div>
+        <!-- Boite contenant le jeu -->
+        <div class="box">
+            <!-- Annonce du jeu + image du prof -->
+            <div class="game-container">
+                <h3>Quel professeur sera celui d'aujourd'hui ?</h3>
+                <div class="PhD_Année">{2022}</div>
+                <div class="PhD_Indices">
+                    <div class="PhD_Box">
+                        <img src="img/icon-age.png" alt="Icône 1">
+                        <p>Indice Age</p>
+                        <div class="tooltip">Age du Professeur</div>
+                    </div>
+                    <div class="PhD_Box">
+                        <img src="img/icon-specialite.png" alt="Icône 2">
+                        <p>Indice Spécialité</p>
+                        <div class="tooltip">Spécialité auquel le professeur est affilié</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Saisie du nom du prof -->
+        <div class="box">
+                <form action="">
+                    <table>
+                        <td class="text-input">
+                            <input id="input" type="text" , placeholder="Nom du professeur" name="fname"><br>
+                        </td>
+                        <td class="text-input">
+                            <input type="submit" value="Deviner" width="75" height="25px">
+                        </td>
+                    </table>
+                </form>
+        </div>
+        <!-- Affichage du dernier prof a deviner -->
+        <div>
+            <h3>Le professeur d'hier était : {nom prof}</h3>
+        </div>
+
+        <div class ="box">
+            <h1>Vous en voulez plus ?</h1>
+            <h2>Jouez a nos autres jeux !</h2>
+            <br> <br>
+            <div>
+                <a href="etudiantdle.html" class="button-link">
+                    <div class="button-game">
+                        <img src="img/etudiantdle.png" class="button-img">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 SIMON Hugo & NAVET Titouan & HODE Dorian. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
